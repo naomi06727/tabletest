@@ -114,29 +114,29 @@
               });
 
             //方法1:用form傳送
-              $('body').append('<form id="textform" style="display:none"></form>');
-              $("#textform").attr('method','post');
-              $("#textform").attr('action','access.php');
-              //$("#textform").attr('enctype','multipart/form-data');
-              $("#textform").append('<textarea style="display:none" name="items" id="items" >'+JSON.stringify(items)+'</textarea>');
-              $("#textform").submit();
+            //   $('body').append('<form id="textform" style="display:none"></form>');
+            //   $("#textform").attr('method','post');
+            //   $("#textform").attr('action','access.php');
+            //   //$("#textform").attr('enctype','multipart/form-data');
+            //   $("#textform").append('<textarea style="display:none" name="items" id="items" >'+JSON.stringify(items)+'</textarea>');
+            //   $("#textform").submit();
 
             // console.log(items);
             // console.log(JSON.stringify(items));
 
             //方法2:用ajax傳送
-            //   $.ajax({
-            //         url: 'access.php',
-            //         method: "POST",
-            //         dataType: "json",
-            //         data: {
-            //         items
-            //         },
-            //     })
-            //     .done(function(response) 
-            //     {
-            //         console.log(response.msg);
-            //     });         
+              $.ajax({
+                    url: 'access.php',
+                    method: "POST",
+                    dataType: "json",
+                    data: {
+                    items
+                    },
+                })
+                .done(function(response) 
+                {
+                    console.log(response.msg);
+                });         
         });
     })  
 </script>

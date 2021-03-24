@@ -6,7 +6,7 @@
  * */
 // $items = json_decode($_POST['items'],true);
 
-// echo "<pre>".print_r($items[1], true)."</pre>";exit;
+// echo "<pre>".print_r($items, true)."</pre>";exit;
 // if($items)
 // {
 //     foreach($items as $item)
@@ -27,7 +27,7 @@
  * 
  * */
 $items = $_POST['items'];
-// echo "<pre>".print_r($items, true)."</pre>";exit;
+echo "<pre>".print_r($items, true)."</pre>";exit;
 
 if($items)
 {
