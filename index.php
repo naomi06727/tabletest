@@ -22,7 +22,7 @@
 </head>
 
 <form>
-    <button type="button" class="btn btn-sm btn-success add"><i class="fa fa-plus" aria-hidden="true"></i> 新增刪除碼</button>
+    <button type="button" class="btn btn-sm btn-success add"><i class="fa fa-plus" aria-hidden="true"></i> 新增</button>
     <table border="1" id="mt">
         <thead>
         <tr>
@@ -90,7 +90,6 @@
 
               let items = [];
               $('.items').each(function(){
-                  
                   var item_AG        = $(this).find('.item_AG').val();
                   var item_STORE     = $(this).find('.item_STORE').val();
                   var item_AGA       = $(this).find('.item_AGA').val();
